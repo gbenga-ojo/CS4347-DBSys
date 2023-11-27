@@ -1,2 +1,1 @@
-# CS4485
-Senior Project
+# CS4347 DBSys Project SQL

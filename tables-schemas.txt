@@ -1,4 +1,6 @@
-MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DESC department; DESC employee; DESC end_time; DESC grades; DESC interviewees; DESC interviewers; DESC interviews; DESC marketing_site; DESC parts; DESC parts_use; DESC pay; DESC people; DESC positions; DESC product; DESC sale_history; DESC sells; DESC start_time; DESC vendor;   
+MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DESC department; DESC employee; DESC end_time; DESC grades; DESC interviewees; DESC interviewers; DESC interviews; DESC marketing_site; DESC parts; DESC parts_use; DESC pay; DESC people; DESC positions; DESC product; DESC sale_history; DESC sells; DESC start_time; DESC vendor;
+
+applies_to
 +--------+---------+------+-----+---------+-------+
 | Field  | Type    | Null | Key | Default | Extra |
 +--------+---------+------+-----+---------+-------+
@@ -7,6 +9,7 @@ MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DE
 +--------+---------+------+-----+---------+-------+
 2 rows in set (0.003 sec)
 
+buys
 +-------+---------+------+-----+---------+-------+
 | Field | Type    | Null | Key | Default | Extra |
 +-------+---------+------+-----+---------+-------+
@@ -15,6 +18,7 @@ MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DE
 +-------+---------+------+-----+---------+-------+
 2 rows in set (0.002 sec)
 
+candidate
 +--------+---------+------+-----+---------+-------+
 | Field  | Type    | Null | Key | Default | Extra |
 +--------+---------+------+-----+---------+-------+
@@ -22,6 +26,7 @@ MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DE
 +--------+---------+------+-----+---------+-------+
 1 row in set (0.002 sec)
 
+customer
 +-----------------------+-------------+------+-----+---------+-------+
 | Field                 | Type        | Null | Key | Default | Extra |
 +-----------------------+-------------+------+-----+---------+-------+
@@ -30,6 +35,7 @@ MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DE
 +-----------------------+-------------+------+-----+---------+-------+
 2 rows in set (0.003 sec)
 
+department
 +--------+-------------+------+-----+---------+-------+
 | Field  | Type        | Null | Key | Default | Extra |
 +--------+-------------+------+-----+---------+-------+
@@ -38,6 +44,7 @@ MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DE
 +--------+-------------+------+-----+---------+-------+
 2 rows in set (0.004 sec)
 
+employee
 +--------+-------------+------+-----+---------+-------+
 | Field  | Type        | Null | Key | Default | Extra |
 +--------+-------------+------+-----+---------+-------+
@@ -49,6 +56,7 @@ MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DE
 +--------+-------------+------+-----+---------+-------+
 5 rows in set (0.003 sec)
 
+end_time
 +----------+---------+------+-----+---------+-------+
 | Field    | Type    | Null | Key | Default | Extra |
 +----------+---------+------+-----+---------+-------+
@@ -58,6 +66,7 @@ MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DE
 +----------+---------+------+-----+---------+-------+
 3 rows in set (0.002 sec)
 
+grades
 +------------+---------+------+-----+---------+-------+
 | Field      | Type    | Null | Key | Default | Extra |
 +------------+---------+------+-----+---------+-------+
@@ -67,6 +76,7 @@ MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DE
 +------------+---------+------+-----+---------+-------+
 3 rows in set (0.002 sec)
 
+interviewees
 +--------------+-------------+------+-----+---------+-------+
 | Field        | Type        | Null | Key | Default | Extra |
 +--------------+-------------+------+-----+---------+-------+
@@ -76,6 +86,7 @@ MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DE
 +--------------+-------------+------+-----+---------+-------+
 3 rows in set (0.002 sec)
 
+interviewers
 +-------------------+-------------+------+-----+---------+-------+
 | Field             | Type        | Null | Key | Default | Extra |
 +-------------------+-------------+------+-----+---------+-------+
@@ -86,6 +97,7 @@ MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DE
 +-------------------+-------------+------+-----+---------+-------+
 4 rows in set (0.003 sec)
 
+interviews
 +--------+-------------+------+-----+---------+-------+
 | Field  | Type        | Null | Key | Default | Extra |
 +--------+-------------+------+-----+---------+-------+
@@ -95,6 +107,7 @@ MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DE
 +--------+-------------+------+-----+---------+-------+
 3 rows in set (0.004 sec)
 
+marketing_site
 +-----------+-------------+------+-----+---------+-------+
 | Field     | Type        | Null | Key | Default | Extra |
 +-----------+-------------+------+-----+---------+-------+
@@ -105,6 +118,7 @@ MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DE
 +-----------+-------------+------+-----+---------+-------+
 4 rows in set (0.003 sec)
 
+parts
 +-------+--------------+------+-----+---------+-------+
 | Field | Type         | Null | Key | Default | Extra |
 +-------+--------------+------+-----+---------+-------+
@@ -113,6 +127,7 @@ MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DE
 +-------+--------------+------+-----+---------+-------+
 2 rows in set (0.002 sec)
 
+parts_use
 +---------+-------------+------+-----+---------+-------+
 | Field   | Type        | Null | Key | Default | Extra |
 +---------+-------------+------+-----+---------+-------+
@@ -122,6 +137,7 @@ MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DE
 +---------+-------------+------+-----+---------+-------+
 3 rows in set (0.002 sec)
 
+pay
 +---------------+---------+------+-----+---------+-------+
 | Field         | Type    | Null | Key | Default | Extra |
 +---------------+---------+------+-----+---------+-------+
@@ -132,6 +148,7 @@ MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DE
 +---------------+---------+------+-----+---------+-------+
 4 rows in set (0.003 sec)
 
+people
 +--------+-------------+------+-----+---------+-------+
 | Field  | Type        | Null | Key | Default | Extra |
 +--------+-------------+------+-----+---------+-------+
@@ -148,6 +165,7 @@ MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DE
 +--------+-------------+------+-----+---------+-------+
 10 rows in set (0.004 sec)
 
+positions
 +-------------+-------------+------+-----+---------+-------+
 | Field       | Type        | Null | Key | Default | Extra |
 +-------------+-------------+------+-----+---------+-------+
@@ -158,6 +176,7 @@ MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DE
 +-------------+-------------+------+-----+---------+-------+
 4 rows in set (0.003 sec)
 
+product
 +---------+--------------+------+-----+---------+-------+
 | Field   | Type         | Null | Key | Default | Extra |
 +---------+--------------+------+-----+---------+-------+
@@ -171,6 +190,7 @@ MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DE
 +---------+--------------+------+-----+---------+-------+
 7 rows in set (0.001 sec)
 
+sale_history
 +-------------+-------------+------+-----+---------+-------+
 | Field       | Type        | Null | Key | Default | Extra |
 +-------------+-------------+------+-----+---------+-------+
@@ -182,6 +202,7 @@ MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DE
 +-------------+-------------+------+-----+---------+-------+
 5 rows in set (0.002 sec)
 
+sells
 +-------+---------+------+-----+---------+-------+
 | Field | Type    | Null | Key | Default | Extra |
 +-------+---------+------+-----+---------+-------+
@@ -190,6 +211,7 @@ MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DE
 +-------+---------+------+-----+---------+-------+
 2 rows in set (0.002 sec)
 
+start_time
 +------------+---------+------+-----+---------+-------+
 | Field      | Type    | Null | Key | Default | Extra |
 +------------+---------+------+-----+---------+-------+
@@ -199,6 +221,7 @@ MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DE
 +------------+---------+------+-----+---------+-------+
 3 rows in set (0.002 sec)
 
+vendor
 +------------+-------------+------+-----+---------+-------+
 | Field      | Type        | Null | Key | Default | Extra |
 +------------+-------------+------+-----+---------+-------+

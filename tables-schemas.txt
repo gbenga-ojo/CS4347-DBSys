@@ -1,0 +1,212 @@
+MariaDB [company]> DESC applies_to; DESC buys; DESC candidate; DESC customer; DESC department; DESC employee; DESC end_time; DESC grades; DESC interviewees; DESC interviewers; DESC interviews; DESC marketing_site; DESC parts; DESC parts_use; DESC pay; DESC people; DESC positions; DESC product; DESC sale_history; DESC sells; DESC start_time; DESC vendor;   
++--------+---------+------+-----+---------+-------+
+| Field  | Type    | Null | Key | Default | Extra |
++--------+---------+------+-----+---------+-------+
+| Can_ID | int(11) | NO   | PRI | NULL    |       |
+| J_ID   | int(11) | NO   | PRI | NULL    |       |
++--------+---------+------+-----+---------+-------+
+2 rows in set (0.003 sec)
+
++-------+---------+------+-----+---------+-------+
+| Field | Type    | Null | Key | Default | Extra |
++-------+---------+------+-----+---------+-------+
+| Pa_ID | int(11) | NO   | PRI | NULL    |       |
+| D_ID  | int(11) | NO   | PRI | NULL    |       |
++-------+---------+------+-----+---------+-------+
+2 rows in set (0.002 sec)
+
++--------+---------+------+-----+---------+-------+
+| Field  | Type    | Null | Key | Default | Extra |
++--------+---------+------+-----+---------+-------+
+| Can_ID | int(11) | NO   | PRI | NULL    |       |
++--------+---------+------+-----+---------+-------+
+1 row in set (0.002 sec)
+
++-----------------------+-------------+------+-----+---------+-------+
+| Field                 | Type        | Null | Key | Default | Extra |
++-----------------------+-------------+------+-----+---------+-------+
+| C_ID                  | int(11)     | NO   | PRI | NULL    |       |
+| Preferred_Salespeople | varchar(20) | YES  |     | NULL    |       |
++-----------------------+-------------+------+-----+---------+-------+
+2 rows in set (0.003 sec)
+
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| D_ID   | int(11)     | NO   | PRI | NULL    |       |
+| D_Name | varchar(20) | NO   |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+2 rows in set (0.004 sec)
+
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| E_ID   | int(11)     | NO   | PRI | NULL    |       |
+| E_Rank | varchar(20) | NO   |     | NULL    |       |
+| title  | varchar(20) | NO   |     | NULL    |       |
+| D_ID   | int(11)     | YES  | MUL | NULL    |       |
+| S_ID   | int(11)     | YES  | MUL | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+5 rows in set (0.003 sec)
+
++----------+---------+------+-----+---------+-------+
+| Field    | Type    | Null | Key | Default | Extra |
++----------+---------+------+-----+---------+-------+
+| end_time | time    | NO   |     | NULL    |       |
+| E_ID     | int(11) | NO   | PRI | NULL    |       |
+| D_ID     | int(11) | NO   | PRI | NULL    |       |
++----------+---------+------+-----+---------+-------+
+3 rows in set (0.002 sec)
+
++------------+---------+------+-----+---------+-------+
+| Field      | Type    | Null | Key | Default | Extra |
++------------+---------+------+-----+---------+-------+
+| Can_ID     | int(11) | NO   | PRI | NULL    |       |
+| average    | int(11) | YES  |     | NULL    |       |
+| num_passed | int(11) | YES  |     | NULL    |       |
++------------+---------+------+-----+---------+-------+
+3 rows in set (0.002 sec)
+
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| J_Pos        | varchar(20) | NO   | PRI | NULL    |       |
+| J_ID         | int(11)     | NO   | PRI | NULL    |       |
+| interviewees | varchar(20) | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
+3 rows in set (0.002 sec)
+
++-------------------+-------------+------+-----+---------+-------+
+| Field             | Type        | Null | Key | Default | Extra |
++-------------------+-------------+------+-----+---------+-------+
+| J_Pos             | varchar(20) | NO   | PRI | NULL    |       |
+| J_ID              | int(11)     | NO   | PRI | NULL    |       |
+| interviewers_name | varchar(20) | YES  |     | NULL    |       |
+| interviewers_ID   | int(11)     | NO   | PRI | NULL    |       |
++-------------------+-------------+------+-----+---------+-------+
+4 rows in set (0.003 sec)
+
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| J_Pos  | varchar(20) | NO   | PRI | NULL    |       |
+| J_time | time        | YES  |     | NULL    |       |
+| J_ID   | int(11)     | YES  | MUL | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+3 rows in set (0.004 sec)
+
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| site_ID   | int(11)     | NO   | PRI | NULL    |       |
+| site_name | varchar(20) | NO   |     | NULL    |       |
+| location  | varchar(20) | NO   | UNI | NULL    |       |
+| D_ID      | int(11)     | YES  | MUL | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+4 rows in set (0.003 sec)
+
++-------+--------------+------+-----+---------+-------+
+| Field | Type         | Null | Key | Default | Extra |
++-------+--------------+------+-----+---------+-------+
+| Pa_ID | int(11)      | NO   | PRI | NULL    |       |
+| price | decimal(5,0) | YES  |     | NULL    |       |
++-------+--------------+------+-----+---------+-------+
+2 rows in set (0.002 sec)
+
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| Used_in | varchar(20) | NO   | PRI | NULL    |       |
+| amount  | int(11)     | NO   |     | NULL    |       |
+| Pa_ID   | int(11)     | NO   | PRI | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+3 rows in set (0.002 sec)
+
++---------------+---------+------+-----+---------+-------+
+| Field         | Type    | Null | Key | Default | Extra |
++---------------+---------+------+-----+---------+-------+
+| E_ID          | int(11) | NO   | PRI | NULL    |       |
+| E_transaction | int(11) | NO   |     | NULL    |       |
+| pay_date      | date    | NO   | PRI | NULL    |       |
+| amount        | int(11) | NO   |     | NULL    |       |
++---------------+---------+------+-----+---------+-------+
+4 rows in set (0.003 sec)
+
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| ID     | int(11)     | NO   | PRI | NULL    |       |
+| gender | varchar(10) | NO   |     | NULL    |       |
+| city   | varchar(20) | YES  |     | NULL    |       |
+| state  | varchar(2)  | YES  |     | NULL    |       |
+| zip    | varchar(5)  | YES  |     | NULL    |       |
+| line1  | int(11)     | YES  |     | NULL    |       |
+| line2  | int(11)     | YES  |     | NULL    |       |
+| FName  | varchar(20) | NO   |     | NULL    |       |
+| LName  | varchar(20) | NO   |     | NULL    |       |
+| age    | int(11)     | NO   |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+10 rows in set (0.004 sec)
+
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| J_ID        | int(11)     | NO   | PRI | NULL    |       |
+| J_Desc      | varchar(50) | NO   |     | NULL    |       |
+| date_posted | date        | NO   |     | NULL    |       |
+| D_ID        | int(11)     | YES  | MUL | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+4 rows in set (0.003 sec)
+
++---------+--------------+------+-----+---------+-------+
+| Field   | Type         | Null | Key | Default | Extra |
++---------+--------------+------+-----+---------+-------+
+| Pr_ID   | int(11)      | NO   | PRI | NULL    |       |
+| Pr_type | varchar(20)  | YES  |     | NULL    |       |
+| weight  | int(11)      | YES  |     | NULL    |       |
+| size    | int(11)      | YES  |     | NULL    |       |
+| price   | decimal(5,0) | YES  |     | NULL    |       |
+| style   | varchar(20)  | YES  |     | NULL    |       |
+| D_ID    | int(11)      | YES  | MUL | NULL    |       |
++---------+--------------+------+-----+---------+-------+
+7 rows in set (0.001 sec)
+
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| Site_ID     | int(11)     | NO   | PRI | NULL    |       |
+| C_ID        | int(11)     | NO   | PRI | NULL    |       |
+| sale_time   | time        | NO   | PRI | NULL    |       |
+| Salesperson | varchar(20) | YES  |     | NULL    |       |
+| Pr_ID       | int(11)     | NO   | MUL | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+5 rows in set (0.002 sec)
+
++-------+---------+------+-----+---------+-------+
+| Field | Type    | Null | Key | Default | Extra |
++-------+---------+------+-----+---------+-------+
+| Pr_ID | int(11) | NO   | PRI | NULL    |       |
+| D_ID  | int(11) | NO   | PRI | NULL    |       |
++-------+---------+------+-----+---------+-------+
+2 rows in set (0.002 sec)
+
++------------+---------+------+-----+---------+-------+
+| Field      | Type    | Null | Key | Default | Extra |
++------------+---------+------+-----+---------+-------+
+| start_time | time    | NO   |     | NULL    |       |
+| E_ID       | int(11) | NO   | PRI | NULL    |       |
+| D_ID       | int(11) | NO   | PRI | NULL    |       |
++------------+---------+------+-----+---------+-------+
+3 rows in set (0.002 sec)
+
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| V_ID       | int(11)     | NO   | PRI | NULL    |       |
+| VName      | varchar(20) | NO   |     | NULL    |       |
+| credit     | int(11)     | NO   |     | NULL    |       |
+| address    | varchar(20) | YES  |     | NULL    |       |
+| account_no | int(11)     | NO   |     | NULL    |       |
+| url        | varchar(20) | NO   |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+6 rows in set (0.002 sec)

@@ -48,7 +48,10 @@ SELECT Salesperson, COUNT(*) as c
   ORDER BY c DESC;
 
 -- QUERY #10
-
+SELECT Pr_type, (product.price - parts.price) as net
+  FROM product, parts
+  GROUP BY Pr_type
+  ORDER BY net DESC;
 
 -- QUERY #11
 

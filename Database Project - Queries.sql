@@ -16,6 +16,9 @@ from employee as e, people as p
 where e.S_ID = null and e.E_ID = p.ID
 
 -- QUERY #4
+SELECT location, m.site_ID FROM marketing_site AS m
+  LEFT JOIN sale_history AS s ON m.site_ID = s.Site_ID
+  WHERE s.sale_time NOT LIKE "2011-03-%";
 
 
 -- QUERY #5

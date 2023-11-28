@@ -70,6 +70,10 @@ SELECT Can_id, FName, LName, email
 SELECT * FROM applies_to LEFT JOIN people ON Can_id = ID;
 
 -- QUERY #14
-
+-- Aside from nested selects or stored procedures / functions, this easiest done w/ two separate queries
+SELECT DISTINCT E_ID from pay;
+-- // then for each distinct id
+SELECT avg(amount) FROM pay;
+-- // add these to a temporary table, then take the maximum
 
 -- QUERY #15

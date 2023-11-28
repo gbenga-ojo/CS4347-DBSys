@@ -39,7 +39,7 @@ SELECT department.D_ID, D_Name
 
 
 -- QUERY #8
-
+-- SKIP FOR NOW!!
 
 -- QUERY #9
 

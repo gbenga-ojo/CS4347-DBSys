@@ -42,7 +42,10 @@ SELECT department.D_ID, D_Name
 -- SKIP FOR NOW!!
 
 -- QUERY #9
-
+SELECT Salesperson, COUNT(*) as c
+  FROM sale_history
+  GROUP BY Salesperson
+  ORDER BY c DESC;
 
 -- QUERY #10
 

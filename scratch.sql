@@ -1,3 +1,5 @@
+-- Start w/ departments, then marketing_sites
+
 INSERT INTO sale_history(Site_ID, C_ID, sale_time, Salesperson, Pr_ID)
   VALUES(1, 1, "2011-03-03", "Jane Doe", "1");
 

@@ -54,8 +54,12 @@ SELECT Pr_type, (product.price - parts.price) as net
   ORDER BY net DESC;
 
 -- QUERY #11
--- (the only current way I can see to execute this query is by having multple employees w/ the same name
--- however there is a primary key constraint on E_ID) thoughts?
+SELECT start_time.D_ID, start_time.E_ID, FName, LName
+  FROM start_time LEFT JOIN people
+  ON ID = E_ID
+  GROUP BY FName, LName
+  ORDER BY D_ID desc;
+
 
 -- QUERY #12
 

@@ -45,3 +45,21 @@ UPDATE sale_history SET Site_ID = 10 WHERE `Salesperson` IS NULL; -- duplicate s
 
 -- Suggested table alterations
 ALTER TABLE sale_history MODIFY COLUMN sale_time DATETIME;
+
+-- INDEXES --
+MariaDB [company]> SHOW INDEXES FROM candidate\G
+*************************** 1. row ***************************
+        Table: candidate
+   Non_unique: 0
+     Key_name: PRIMARY
+ Seq_in_index: 1
+  Column_name: Can_ID
+    Collation: A
+  Cardinality: 0
+     Sub_part: NULL
+       Packed: NULL
+         Null: 
+   Index_type: BTREE
+      Comment: 
+Index_comment: 
+1 row in set (0.000 sec)

@@ -77,3 +77,5 @@ SELECT avg(amount) FROM pay;
 -- // add these to a temporary table, then take the maximum
 
 -- QUERY #15
+SELECT MIN(price), product.D_ID, sells.Pr_ID, product.D_ID, V_ID, VName
+  FROM product, sells, vendor;

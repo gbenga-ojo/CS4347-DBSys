@@ -54,7 +54,8 @@ SELECT Pr_type, (product.price - parts.price) as net
   ORDER BY net DESC;
 
 -- QUERY #11
-
+-- (the only current way I can see to execute this query is by having multple employees w/ the same name
+-- however there is a primary key constraint on E_ID) thoughts?
 
 -- QUERY #12
 

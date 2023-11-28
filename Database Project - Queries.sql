@@ -62,10 +62,12 @@ SELECT start_time.D_ID, start_time.E_ID, FName, LName
 
 
 -- QUERY #12
-
+SELECT Can_id, FName, LName, email
+  FROM grades LEFT JOIN people on Can_id = ID
+  WHERE average >= 70 AND num_passed >= 5;
 
 -- QUERY #13
-
+SELECT * FROM applies_to LEFT JOIN people ON Can_id = ID;
 
 -- QUERY #14
 

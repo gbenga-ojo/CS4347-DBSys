@@ -22,6 +22,9 @@ SELECT location, m.site_ID FROM marketing_site AS m
 
 
 -- QUERY #5
+SELECT DISTINCT J_ID, J_Desc FROM positions
+  LEFT JOIN start_time ON E_ID
+  WHERE MONTH(start_time.start_time) > MONTH(positions.date_posted) + 1;
 
 
 -- QUERY #6

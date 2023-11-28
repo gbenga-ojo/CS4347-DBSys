@@ -33,6 +33,9 @@ SELECT DISTINCT Site_ID, Salesperson, price
   WHERE price > 200.00;
 
 -- QUERY #7
+SELECT department.D_ID, D_Name
+  FROM positions, department
+  WHERE (date_posted NOT BETWEEN "2011-01-01" AND "2011-02-01");
 
 
 -- QUERY #8

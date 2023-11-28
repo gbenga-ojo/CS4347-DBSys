@@ -22,6 +22,10 @@ INSERT INTO people VALUES (1, "female", "Columbus", "OH", "43137", "11111", "222
 INSERT INTO people VALUES (2, "male", "Columbus", "OH", "43125", "33333", "44444", "Little", "John", 43);
 INSERT INTO people VALUES (3, "male", "Dallas", "TX", "43125", "55555", "66666", "Brazen", "Saddle", 21);
 INSERT INTO people VALUES (4, "female", "Dallas", "TX", "75244", "77777", "88888", "Sally", "Sue", 45);
+INSERT INTO people VALUES (1, "female", "New York", "NY", "13392", "99999", "10101", "Holly", "Wreaths", 35);
+INSERT INTO people VALUES (2, "male", "New York", "NY", "17732", "12121", "13131", "Kris", "Kringle", 43);
+INSERT INTO people VALUES (3, "male", "Denver", "CO", "80122", "14141", "15151", "Brazen", "Saddle", 21);
+INSERT INTO people VALUES (4, "female", "Denver", "CO", "8023", "16161", "11777", "May", "Lee", 38);
 
 -- customers
 INSERT INTO customer VALUES (1, "Subject Dawn");
@@ -46,6 +50,17 @@ INSERT INTO positions VALUES (20, "Forklift Operator", "07-07-11", 1);
 INSERT INTO start_time VALUES ("2002-01-11", 4, 10);
 INSERT INTO start_time VALUES ("2007-07-14", 3, 1);
 INSERT INTO start_time VALUES ("2007-07-14", 3, 10);
+
+-- product
+INSERT INTO product (Pr_ID, Pr_type, price) VALUES (200, "Cog", 150.00);
+INSERT INTO product (Pr_ID, Pr_type, price) VALUES (300, "Wheel", 250.00);
+INSERT INTO product (Pr_ID, Pr_type, price) VALUES (400, "Gear", 220.00);
+INSERT INTO product (Pr_ID, Pr_type, price) VALUES (500, "Pulley", 199.00);
+
+
+
+
+
 -- scratch --
 -- (4)
 SELECT location, m.site_ID FROM marketing_site AS m LEFT JOIN sale_history AS s ON m.site_ID = s.Site_ID WHERE s.sale_time = "2011-03-03";

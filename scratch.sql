@@ -37,6 +37,11 @@ INSERT INTO employee (E_ID, E_Rank, title, D_ID) VALUES (4, "null-tier", "Chief 
 INSERT INTO sale_history (Site_ID, C_ID, sale_time, Pr_ID) VALUES (1, 1, '11-12-23', 100);
 INSERT INTO sale_history(Site_ID, C_ID, sale_time, Salesperson, Pr_ID) VALUES(1, 1, "2011-03-03", "Jane Doe", 100);
 
+-- positions
+INSERT INTO positions VALUES (1, "Welder", "01-01-11", 1);
+INSERT INTO positions VALUES (10, "Quality Assurance", "07-07-11", 10);
+INSERT INTO positions VALUES (20, "Forklift Operator", "07-07-11", 1);
+
 -- scratch --
 -- (4)
 SELECT location, m.site_ID FROM marketing_site AS m LEFT JOIN sale_history AS s ON m.site_ID = s.Site_ID WHERE s.sale_time = "2011-03-03";

@@ -42,14 +42,22 @@ INSERT INTO positions VALUES (1, "Welder", "01-01-11", 1);
 INSERT INTO positions VALUES (10, "Quality Assurance", "07-07-11", 10);
 INSERT INTO positions VALUES (20, "Forklift Operator", "07-07-11", 1);
 
+-- start_times
+INSERT INTO start_time VALUES ("2002-01-11", 4, 10);
+INSERT INTO start_time VALUES ("2007-07-14", 3, 1);
+INSERT INTO start_time VALUES ("2007-07-14", 3, 10);
 -- scratch --
 -- (4)
 SELECT location, m.site_ID FROM marketing_site AS m LEFT JOIN sale_history AS s ON m.site_ID = s.Site_ID WHERE s.sale_time = "2011-03-03";
 SELECT location, m.site_ID FROM marketing_site AS m LEFT JOIN sale_history AS s ON m.site_ID = s.Site_ID WHERE s.sale_time NOT LIKE "2011-03-%";
 UPDATE sale_history SET Site_ID = 10 WHERE `Salesperson` IS NULL; -- duplicate site id
 
+-- (5)
+SELECT DISTINCT J_ID, J_Desc FROM positions LEFT JOIN start_time ON E_ID WHERE MONTH(start_time.start_time) > MONTH(positions.date_posted) + 1;
+
 -- Suggested table alterations
 ALTER TABLE sale_history MODIFY COLUMN sale_time DATETIME;
+ALTER TABLE start_time MODIFY COLUMN start_time DATETIME;
 
 -- INDEXES --
 MariaDB [company]> SHOW INDEXES FROM candidate\G

@@ -28,7 +28,9 @@ SELECT DISTINCT J_ID, J_Desc FROM positions
 
 
 -- QUERY #6
-
+SELECT DISTINCT Site_ID, Salesperson, price
+  FROM sale_history, product
+  WHERE price > 200.00;
 
 -- QUERY #7
 

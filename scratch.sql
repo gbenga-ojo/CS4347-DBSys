@@ -77,6 +77,7 @@ SELECT DISTINCT J_ID, J_Desc FROM positions LEFT JOIN start_time ON E_ID WHERE M
 -- Suggested table alterations
 ALTER TABLE sale_history MODIFY COLUMN sale_time DATETIME;
 ALTER TABLE start_time MODIFY COLUMN start_time DATETIME;
+  ALTER TABLE interviews MODIFY COLUMN J_time DATETIME;
 
 -- INDEXES --
 MariaDB [company]> SHOW INDEXES FROM candidate\G

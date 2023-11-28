@@ -22,10 +22,10 @@ INSERT INTO people VALUES (1, "female", "Columbus", "OH", "43137", "11111", "222
 INSERT INTO people VALUES (2, "male", "Columbus", "OH", "43125", "33333", "44444", "Little", "John", 43);
 INSERT INTO people VALUES (3, "male", "Dallas", "TX", "43125", "55555", "66666", "Brazen", "Saddle", 21);
 INSERT INTO people VALUES (4, "female", "Dallas", "TX", "75244", "77777", "88888", "Sally", "Sue", 45);
-INSERT INTO people VALUES (1, "female", "New York", "NY", "13392", "99999", "10101", "Holly", "Wreaths", 35);
-INSERT INTO people VALUES (2, "male", "New York", "NY", "17732", "12121", "13131", "Kris", "Kringle", 43);
-INSERT INTO people VALUES (3, "male", "Denver", "CO", "80122", "14141", "15151", "Brazen", "Saddle", 21);
-INSERT INTO people VALUES (4, "female", "Denver", "CO", "8023", "16161", "11777", "May", "Lee", 38);
+INSERT INTO people VALUES (10, "female", "New York", "NY", "13392", "99999", "10101", "Holly", "Wreaths", 35);
+INSERT INTO people VALUES (20, "male", "New York", "NY", "17732", "12121", "13131", "Kris", "Kringle", 43);
+INSERT INTO people VALUES (30, "male", "Denver", "CO", "80122", "14141", "15151", "Brazen", "Saddle", 21);
+INSERT INTO people VALUES (40, "female", "Denver", "CO", "8023", "16161", "11777", "May", "Lee", 38);
 
 -- customers
 INSERT INTO customer VALUES (1, "Subject Dawn");
@@ -35,7 +35,11 @@ INSERT INTO customer VALUES (2, "Rigel Orion");
 INSERT INTO employee (E_ID, E_Rank, title) VALUES (1, "third-tier", "CFO");
 INSERT INTO employee (E_ID, E_Rank, title) VALUES (2, "second-tier", "CTO");
 INSERT INTO employee (E_ID, E_Rank, title) VALUES (3, "first-tier", "CEO");
-INSERT INTO employee (E_ID, E_Rank, title, D_ID) VALUES (4, "null-tier", "Chief Councel", 10);
+INSERT INTO employee (E_ID, E_Rank, title, D_ID) VALUES (4, "null-tier", "Chief Councel", 2);
+INSERT INTO employee (E_ID, E_Rank, title) VALUES (10, "third-tier", "Saleperson");
+INSERT INTO employee (E_ID, E_Rank, title) VALUES (20, "second-tier", "Saleperson");
+INSERT INTO employee (E_ID, E_Rank, title) VALUES (30, "first-tier", "Saleperson");
+INSERT INTO employee (E_ID, E_Rank, title, D_ID) VALUES (40, "null-tier", Saleperson", 3);
 
 -- sale_history
 INSERT INTO sale_history (Site_ID, C_ID, sale_time, Pr_ID) VALUES (1, 1, '11-12-23', 100);
